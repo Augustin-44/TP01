@@ -56,17 +56,17 @@
         <audio controls>
             <source src="audio.mp3.m4a" type="audio/mp3">
         </audio>
-        <h2 id="iframe">IFrame<span class="material-icons">link</span><a href="#frame" onclick="javascript:afficher('frame');">Cliquez ici !</a></h2>
-        <iframe id="frame" src="https://www.isen-nantes.fr/" width="500" height="500" name="isen" style="visibility:hidden;"></iframe>
-        <script type = "texte/javascript">
-            function afficher(id){
-                if(document.getElementaryById(id).style.visibility=="hidden"){
-                    document.getElementaryById(id).style.visibility="visible";
-                } 
-                else{
-                    return true;
-                }
-            }
+        <h2 id="iframe">IFrame<i class="material-icons">link</i><a href="#frame" onclick="javascript:afficher('frame');">Cliquez ici !</a></h2> 
+        <iframe id="frame" src="https://isen-nantes.fr/" width="500" height="500" name="nom" frameborder="10px" style="visibility:hidden;"></iframe>
+        
+        <script type="text/javascript">
+        function afficher(id)
+        {
+            if(document.getElementById(id).style.visibility=="hidden") document.getElementById(id).style.visibility="visible";
+        else
+            return true;
+        }
         </script>
+
     </body>
 </html>
