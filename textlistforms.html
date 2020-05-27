@@ -5,61 +5,75 @@
         <title> Titre </title>
     </head>
     <body>
-        <p> <a href = "textlistforms.html">Text&Listes&formulaires</a> |
-        <a href = "tables.html">Tableaux</a> |
-        <a href = "medias.html">Medias</a>
+        <p>
+            <a href="textlistforms.html">Text&Listes&Formulaires</a>
+            |
+            <a href="tables.html">Tableaux</a>
+            |
+            <a href="medias.html">Médias</a>            
         </p>
-
         <hr>
-
         <ul>
-            <li><u> Etudiant</u></li>
-            <li><u> Enseignant</u></li>
-            <li><u> Abbréviation</u></li>
+            <li><u>Etudiant</u></li>
+            <li><u>Enseignant</u></li>
+            <li><u>Abbréviations</u></li>
         </ul>
-
         <hr>
-
-        <h1>1.Etudiant</h1>
-        <form action ="textlistforms.html" method="get">
-            Prénom : <input type= "text"> Nom : <input type = "text">
-            Année d'étude : 
-            <input type = "radio" name="A" value="A1">A1 
-            <input type = "radio" name="A" value="A2">A2 
-            <input type = "radio" name="A" value="A3">A3
-            <br>
-            Remarques: <br>
-            <textarea name= "Remarques" placeholder="Ecrivez votre remarque ici" rows ="5" cols="50"></textarea>
-            <br>
-            <input type="submit" value="Valider">
-        </form>
-        <br><hr>
-
-        <h1>2.Enseignant</h1><br>
-        <form action ="medias.html" method="get">
-            Prénom : <br><input type= "text"> <br>
-            Nom : <br><input type = "text"> <br>
-            Site: <br>
-            <select name="Site:">
-                <option>Brest</option>
-                <option>Nantes</option>
-                <option>Rennes</option>
-            </select>
-            <br>
-            Mot de passe:
-            <br>
-            <input type="Password" ><br>
-            <br>
-            <input type="submit" value="Valider">
-        </form>
-        <hr>
-
-        <h1>3.Abbréviation</h1><br>
-        <dt><b>ISEN</b></dt> <br>
-        <dd>Institut Supérieur de l'Electronique et du Numérique</dd> <br>
-        <dt><b>HTML</b></dt> <br>
-        <dd>HyperText Markup Language</dd> <br>
-        <hr>
-        </form>
+        <ol>
+            <h1><li>Etudiant</li></h1>
+            <form action="textlistforms.html" method="GET">
+                Prénom:
+                <input type="text">
+                Nom:
+                <input type="text">
+                <br>
+                Année d'étude:
+                <input type = "radio" name="A" value="1A">1A
+                <input type = "radio" name="A" value="2A">2A
+                <br>
+                Remarques : 
+                <br>
+                <textarea name = "contest_entry" rows="5" cols="50"></textarea>
+                <br>
+                <input type="submit" value = "Valider">
+                <br>
+                <hr>
+            </form>
+            <h1><li>Enseignant</li></h1>
+            <form action="medias.html" method="GET">
+                Prénom:
+                <br>
+                <input type="text">
+                <br>
+                Nom:
+                <br>
+                <input type="text">
+                <br>
+                Site:
+                <br>
+                <select>
+                    <option>Nantes</option>
+                    <option>Rennes</option>
+                    <option>Brest</option>
+                </select>
+                <br>
+                Mot de passe :
+                <br>
+                <input type="password">
+                <br>    
+                <br>
+                <input type="submit" value = "Valider">
+                <br>
+                <hr>
+            </form>    
+            <h1><li>Abbréviations</li></h1> 
+            <dl>
+                <h1><dt>ISEN</dt></h1>
+                <dd>Institut Supérieur de l'Electronique et du Numérique</dd>
+                <h1><dt>HTML</dt></h1>
+                <dd>Hypertext Markup Language</dd>
+            </dl>
+            <hr>
+        </ol>
     </body>
 </html>
